@@ -1,11 +1,13 @@
 package com.seven.service;
 
+import com.github.pagehelper.PageHelper;
 import com.seven.dao.UserDao;
 import com.seven.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
  * @ClassName UserService
@@ -18,7 +20,6 @@ import javax.servlet.http.HttpServletRequest;
 public class UserService {
     @Autowired
     UserDao userDao;
-
 
     /*根据用户名和密码匹配，验证是否登录*/
     public Boolean checkLogin(String username, String password, int type, HttpServletRequest request)
@@ -40,5 +41,14 @@ public class UserService {
         else {
             return false;
         }
+    }
+
+    /*查询所有用户*/
+    public List<User> getAllUser(int page,int limit)
+    {
+        System.out.println("进入查询所有用户service——————————————————");
+        /*计算当前页是从第几条数据开始查询*/
+        PageHelper.startPage(page,limit);
+        return userDao.getAllUser();
     }
 }

@@ -29,7 +29,6 @@ public class LoginController {
         return "login";
     }
 
-
     /*验证登录*/
     @RequestMapping("/login")
     public String login(User user, Model model, HttpServletRequest request)

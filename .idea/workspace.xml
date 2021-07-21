@@ -7,212 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43653825-e124-4685-82a8-95f53788d2ce" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/api/clear.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/api/init.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/api/menus.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/api/table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/api/tableSelect.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/api/upload.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/layuimini.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/public.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/themes/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/loginbg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/echarts/echarts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/echarts/echartsTheme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/iconPicker/iconPickerFa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/layarea/layarea.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/layuimini/miniAdmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/layuimini/miniMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/layuimini/miniTab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/layuimini/miniTheme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/layuimini/miniTongji.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/step-lay/step.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/step-lay/step.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/tableSelect/tableSelect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/treetable-lay/treetable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/treetable-lay/treetable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/wangEditor/fonts/w-e-icon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/wangEditor/wangEditor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/wangEditor/wangEditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/wangEditor/wangEditor.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/wangEditor/wangEditor.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/lay-module/wangEditor/wangEditor.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jq-module/jquery.particleground.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jq-module/paigusu.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jq-module/zyupload/zyupload-1.0.0.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jq-module/zyupload/zyupload-1.0.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery-3.4.1/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/font/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/transfer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui-v2.5.5/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trading_platform.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/userIndex.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/test.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springmybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/springmvc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springmvc-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springmybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springmybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/classes/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/classes/mappers/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/classes/springmvc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/classes/springmvc-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/test.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/classes/springmybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/classes/springmybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,12 +71,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="spring-beans.schema" />
         <option value="Tag Library Descriptor" />
         <option value="FxmlFile" />
         <option value="mybatis" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -323,12 +135,12 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\projects\java\trading_platform\src\main\webapp\WEB-INF\pages" />
-      <recent name="E:\projects\java\trading_platform\src\main\webapp\WEB-INF\pages\user" />
-      <recent name="E:\projects\java\trading_platform\src\main\webapp" />
-      <recent name="E:\projects\java\trading_platform\src\main\webapp\trading_platform" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects\java\trading_platform\src\main\webapp\api" />
+      <recent name="E:\projects\java\trading_platform\src\main\webapp\images" />
+      <recent name="E:\projects\java\trading_platform\src\main\resources\mappers" />
       <recent name="E:\projects\java\trading_platform\src\main\webapp\lib" />
+      <recent name="E:\projects\java\trading_platform\src\main\webapp\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.seven.service" />
@@ -336,12 +148,12 @@
       <recent name="com.seven.dao" />
       <recent name="com.seven.controller" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\projects\java\trading_platform\src\main\webapp\api" />
-      <recent name="E:\projects\java\trading_platform\src\main\webapp\images" />
-      <recent name="E:\projects\java\trading_platform\src\main\resources\mappers" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\projects\java\trading_platform\src\main\webapp\WEB-INF\pages\user" />
+      <recent name="E:\projects\java\trading_platform\src\main\webapp\WEB-INF\pages" />
+      <recent name="E:\projects\java\trading_platform\src\main\webapp" />
+      <recent name="E:\projects\java\trading_platform\src\main\webapp\trading_platform" />
       <recent name="E:\projects\java\trading_platform\src\main\webapp\lib" />
-      <recent name="E:\projects\java\trading_platform\src\main\webapp\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -457,7 +269,7 @@
       <workItem from="1626790909885" duration="3863000" />
       <workItem from="1626832955495" duration="5726000" />
       <workItem from="1626838762643" duration="6687000" />
-      <workItem from="1626845729533" duration="2127000" />
+      <workItem from="1626845729533" duration="7518000" />
     </task>
     <servers />
   </component>
@@ -468,10 +280,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="191" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626838142356">
+    <state x="191" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626853364650">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="191" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1626838142356" />
+    <state x="191" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1626853364650" />
     <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1626792459862">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -488,54 +300,54 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="656" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1626791365929" />
-    <state width="1147" height="195" key="GridCell.Tab.0.bottom" timestamp="1626848341936">
+    <state width="839" height="165" key="GridCell.Tab.0.bottom" timestamp="1626853637781">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1147" height="195" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1626848341936" />
-    <state width="1147" height="195" key="GridCell.Tab.0.center" timestamp="1626848341936">
+    <state width="839" height="165" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1626853637781" />
+    <state width="839" height="165" key="GridCell.Tab.0.center" timestamp="1626853637781">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1147" height="195" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1626848341936" />
-    <state width="1147" height="195" key="GridCell.Tab.0.left" timestamp="1626848341936">
+    <state width="839" height="165" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1626853637781" />
+    <state width="839" height="165" key="GridCell.Tab.0.left" timestamp="1626853637781">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1147" height="195" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1626848341936" />
-    <state width="1147" height="195" key="GridCell.Tab.0.right" timestamp="1626848341936">
+    <state width="839" height="165" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1626853637781" />
+    <state width="839" height="165" key="GridCell.Tab.0.right" timestamp="1626853637781">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1147" height="195" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1626848341936" />
-    <state width="1147" height="195" key="GridCell.Tab.1.bottom" timestamp="1626848341936">
+    <state width="839" height="165" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1626853637781" />
+    <state width="839" height="165" key="GridCell.Tab.1.bottom" timestamp="1626853637671">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1147" height="195" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1626848341936" />
-    <state width="1147" height="195" key="GridCell.Tab.1.center" timestamp="1626848341936">
+    <state width="839" height="165" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1626853637671" />
+    <state width="839" height="165" key="GridCell.Tab.1.center" timestamp="1626853637670">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1147" height="195" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1626848341936" />
-    <state width="1147" height="195" key="GridCell.Tab.1.left" timestamp="1626848341936">
+    <state width="839" height="165" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1626853637670" />
+    <state width="839" height="165" key="GridCell.Tab.1.left" timestamp="1626853637670">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1147" height="195" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1626848341936" />
-    <state width="1147" height="195" key="GridCell.Tab.1.right" timestamp="1626848341936">
+    <state width="839" height="165" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1626853637670" />
+    <state width="839" height="165" key="GridCell.Tab.1.right" timestamp="1626853637670">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1147" height="195" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1626848341936" />
-    <state width="1147" height="195" key="GridCell.Tab.2.bottom" timestamp="1626848341936">
+    <state width="839" height="165" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1626853637670" />
+    <state width="839" height="165" key="GridCell.Tab.2.bottom" timestamp="1626853637671">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1147" height="195" key="GridCell.Tab.2.bottom/0.0.1280.720@0.0.1280.720" timestamp="1626848341936" />
-    <state width="1147" height="195" key="GridCell.Tab.2.center" timestamp="1626848341936">
+    <state width="839" height="165" key="GridCell.Tab.2.bottom/0.0.1280.720@0.0.1280.720" timestamp="1626853637671" />
+    <state width="839" height="165" key="GridCell.Tab.2.center" timestamp="1626853637671">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1147" height="195" key="GridCell.Tab.2.center/0.0.1280.720@0.0.1280.720" timestamp="1626848341936" />
-    <state width="1147" height="195" key="GridCell.Tab.2.left" timestamp="1626848341936">
+    <state width="839" height="165" key="GridCell.Tab.2.center/0.0.1280.720@0.0.1280.720" timestamp="1626853637671" />
+    <state width="839" height="165" key="GridCell.Tab.2.left" timestamp="1626853637671">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1147" height="195" key="GridCell.Tab.2.left/0.0.1280.720@0.0.1280.720" timestamp="1626848341936" />
-    <state width="1147" height="195" key="GridCell.Tab.2.right" timestamp="1626848341936">
+    <state width="839" height="165" key="GridCell.Tab.2.left/0.0.1280.720@0.0.1280.720" timestamp="1626853637671" />
+    <state width="839" height="165" key="GridCell.Tab.2.right" timestamp="1626853637671">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1147" height="195" key="GridCell.Tab.2.right/0.0.1280.720@0.0.1280.720" timestamp="1626848341936" />
+    <state width="839" height="165" key="GridCell.Tab.2.right/0.0.1280.720@0.0.1280.720" timestamp="1626853637671" />
     <state x="246" y="0" key="SettingsEditor" timestamp="1626792937064">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

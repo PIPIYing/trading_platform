@@ -26,7 +26,23 @@
     <bean id="sqlSessionFactoy" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="mapperLocations" value="classpath:/mappers/*Mapper.xml"/>
+
+        <!--分页插件-->
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <property name="properties">
+                        <props>
+                            <!--页号在合理值 0 - max-->
+                            <prop key="reasonable">true</prop>
+                        </props>
+                    </property>
+                </bean>
+            </array>
+        </property>
+
     </bean>
+
 
     <!--扫描dao类 将其注册到容器中-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
