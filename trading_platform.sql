@@ -11,7 +11,7 @@
  Target Server Version : 80022
  File Encoding         : 65001
 
- Date: 21/07/2021 17:02:59
+ Date: 21/07/2021 20:26:48
 */
 
 SET NAMES utf8mb4;
@@ -97,8 +97,12 @@ CREATE TABLE `user`  (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES (1, '管理员123', '123', 0);
-INSERT INTO `user` VALUES (2, '客户123', '123', 1);
+INSERT INTO `user` VALUES (1, 'admin123', '123', 0);
+INSERT INTO `user` VALUES (2, 'user123', '123', 1);
 INSERT INTO `user` VALUES (3, '123', '123', 0);
+INSERT INTO `user` VALUES (4, '321', '123', 0);
+INSERT INTO `user` VALUES (8, '555', '555', 1);
+INSERT INTO `user` VALUES (9, '666', '666', 1);
+INSERT INTO `user` VALUES (12, '555', '666', 1);
 
 SET FOREIGN_KEY_CHECKS = 1;

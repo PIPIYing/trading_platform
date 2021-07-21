@@ -6,8 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @ClassName LoginController
@@ -27,6 +30,14 @@ public class LoginController {
     {
         System.out.println("进入登录页面controller————————————————");
         return "login";
+    }
+
+    /*访问注册页面*/
+    @RequestMapping("/toRegister")
+    public String toRegister()
+    {
+        System.out.println("进入注册页面controller————————————————");
+        return "register";
     }
 
     /*访问主页面*/
@@ -64,5 +75,23 @@ public class LoginController {
     {
         int id = userService.getUserId(userName);
         return id;
+    }
+
+    /*注册 - 新增用户（客户）*/
+    @RequestMapping("/register")
+    public String register(User user, Model model)
+    {
+        System.out.println("进入注册controller——————————————————");
+        boolean addResult = userService.addUser(user);
+
+        if(addResult==true)
+        {
+            System.out.println("注册成功，进入登录页");
+            return "login";
+        }else {
+            System.out.println("注册失败，进入注册页");
+            model.addAttribute("msg","注册失败，请重试");
+            return "register";
+        }
     }
 }

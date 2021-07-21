@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>二手交易平台</title>
+    <title>二手交易平台 - 登录页</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Access-Control-Allow-Origin" content="*">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -23,7 +23,7 @@
     <%--action是用来调用controller的控制器--%>
     <form class="layui-form"  action="/login" method="post">
         <div class="layui-form-item logo-title">
-            <h1>二手交易平台</h1>
+            <h1>二手交易平台 - 登录页</h1>
             <div style="color: red;text-align: center;">${msg}</div>
         </div>
 
@@ -45,6 +45,7 @@
         </div>
         <div class="layui-form-item">
             <button class="layui-btn layui-btn layui-btn-normal layui-btn-fluid" lay-submit="" lay-filter="login">登录</button>
+            <a href="/toRegister" class="layui-btn layui-btn layui-btn-normal layui-btn-fluid" lay-filter="register">注册</a>
         </div>
     </form>
 
