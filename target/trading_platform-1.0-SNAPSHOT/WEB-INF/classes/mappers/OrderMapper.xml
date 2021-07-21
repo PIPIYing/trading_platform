@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seven.dao.OrderDao">
+
+    <select id="getAllOrder" resultType="com.seven.domain.Order">
+        select * from order;
+    </select>
+
+<!--    <select id="getOrder" resultType="com.seven.domain.Order">-->
+<!--        select * from order where -->
+<!--    </select>-->
+
+    <insert id="addNotice">
+        insert into order(id,user_id,good_id,userName,goodName,amount,totalPrice,phone,address,remark,createTime) values(#{param1},#{param2},#{param3},#{param4},#{param5},#{param6},#{param7},#{param8},#{param9},#{param10},#{param11})
+    </insert>
+
+    <delete id="deleteOrderByIds" parameterType="list">
+        delete from order where id in
+        <foreach collection="list" item="id" separator="," open="(" close=")">
+        #{id}
+    </delete>
+</mapper>
