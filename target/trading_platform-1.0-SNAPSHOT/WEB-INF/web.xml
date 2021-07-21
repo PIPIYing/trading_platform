@@ -31,8 +31,8 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 
-  <!--配置默认访问页面-->
-  <!--<welcome-file-list>
-    <welcome-file>/WEB-INF/pages/test.jsp</welcome-file>
-  </welcome-file-list>-->
+  配置默认访问页面
+  <welcome-file-list>
+    <welcome-file>/WEB-INF/pages/login.jsp</welcome-file>
+  </welcome-file-list>
 </web-app>

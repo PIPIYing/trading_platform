@@ -22,4 +22,25 @@
         <property name="prefix" value="/WEB-INF/pages/"></property>
         <property name="suffix" value=".jsp"></property>
     </bean>
+
+    <!--静态资源映射-->
+    <mvc:resources mapping="/trading_platform/css/**" location="/css/"/>
+    <mvc:resources mapping="/trading_platform/images/**" location="/images/"/>
+    <mvc:resources mapping="/trading_platform/js/**" location="/js/"/>
+    <mvc:resources mapping="/trading_platform/lib/**" location="/lib/"/>
+    <mvc:resources mapping="/trading_platform/api/**" location="/api/"/>
+
+    <!--配置拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <!--表示拦截器要拦截的路径:/**表示拦截所有路径-->
+            <!-- 注意  /** (任意分层路径下) ，/* (该任意单路径下) 和 配置順序（先所有后排除） -->
+            <mvc:mapping path="/**"/>
+            <!--不拦截的路径-->
+            <mvc:exclude-mapping path="/"/>
+            <mvc:exclude-mapping path="/toLogin"/>
+            <mvc:exclude-mapping path="/login"/>
+            <bean class="com.seven.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>

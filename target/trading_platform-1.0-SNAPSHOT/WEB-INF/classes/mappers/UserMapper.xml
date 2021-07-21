@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seven.dao.UserDao">
+
+    <select id="checkUser" resultType="com.seven.domain.User">
+        select * from user where userName=#{param1} and password=#{param2} and type=#{param3};
+    </select>
+</mapper>
