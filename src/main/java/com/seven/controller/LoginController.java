@@ -29,6 +29,14 @@ public class LoginController {
         return "login";
     }
 
+    /*访问主页面*/
+    @RequestMapping("/index")
+    public String toIndex()
+    {
+        System.out.println("进入主页面controller————————————————");
+        return "index";
+    }
+
     /*验证登录*/
     @RequestMapping("/login")
     public String login(User user, Model model, HttpServletRequest request)
@@ -40,6 +48,8 @@ public class LoginController {
         if(userService.checkLogin(user.getUserName(),user.getPassword(),user.getType(),request)==true)
         {
             System.out.println("验证成功，进入主页");
+            int userId = getUserId(user.getUserName());
+            model.addAttribute("id",userId);
             return "redirect:/index";
         }else {
             System.out.println("验证失败，进入登录页");
@@ -48,11 +58,11 @@ public class LoginController {
         }
     }
 
-    /*访问主页面*/
-    @RequestMapping("/index")
-    public String toIndex()
+    /*获取数据库中用户的id*/
+    @RequestMapping("/getUserId")
+    public int getUserId(String userName)
     {
-        System.out.println("进入主页面controller————————————————");
-        return "index";
+        int id = userService.getUserId(userName);
+        return id;
     }
 }

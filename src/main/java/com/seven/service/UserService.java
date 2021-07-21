@@ -51,4 +51,65 @@ public class UserService {
         PageHelper.startPage(page,limit);
         return userDao.getAllUser();
     }
+
+    /*搜索用户（根据用户名和类型）*/
+    public List<User> searchUser(String userName,int type, int page, int limit)
+    {
+        System.out.println("进入搜索用户service——————————————————");
+        PageHelper.startPage(page, limit);
+        return userDao.searchUser(userName, type);
+    }
+
+    /*添加管理员*/
+    public Boolean addUser(User user)
+    {
+        System.out.println("进入添加管理员service—————————————————");
+        int addResult = userDao.addUser(user.getUserName(),user.getPassword(),user.getType());
+
+        /*根据返回的整数判断是否添加成功*/
+        if(addResult>0)
+        {
+            /*返回true表示添加成功*/
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    /*修改管理员密码*/
+    public Boolean updatePwd(int id,String oldPwd,String newPwd)
+    {
+        int updateReuslt = userDao.updatePwd(id,oldPwd,newPwd);
+
+        if(updateReuslt>0)
+        {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /*删除用户*/
+    public Boolean deleteUser(List<Integer> ids)
+    {
+        int deletResult = userDao.deleteUser(ids);
+
+        if(deletResult>0)
+        {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /*获取用户id*/
+    public int getUserId(String userName)
+    {
+        return userDao.getUserId(userName);
+    }
+
 }

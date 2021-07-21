@@ -129,7 +129,14 @@
     <script src="/trading_platform/js/lay-config.js?v=2.0.0" charset="utf-8"></script>
     <script>
         window.onload = function() {
-            console.log("进入主页")
+            console.log("进入主页");
+            sessionStorage.setItem("userId",GetQueryString('id'));
+            function GetQueryString(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]);
+                return null;
+            }
         }
         /*layui.use(['jquery', 'layer', 'miniAdmin','miniTongji'], function () {
             var $ = layui.jquery,
