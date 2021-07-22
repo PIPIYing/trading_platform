@@ -26,7 +26,7 @@ public class LoginController {
     public String toLogin()
     {
         System.out.println("进入登录页面controller————————————————");
-        return "loginplus";
+        return "login";
     }
 
     /*访问注册页面*/
@@ -34,15 +34,23 @@ public class LoginController {
     public String toRegister()
     {
         System.out.println("进入注册页面controller————————————————");
-        return "registerplus";
+        return "register";
     }
 
-    /*访问主页面*/
-    @RequestMapping("/index")
-    public String toIndex()
+    /*访问主页面 - 管理员*/
+    @RequestMapping("/index1")
+    public String toIndex1()
     {
-        System.out.println("进入主页面controller————————————————");
-        return "index";
+        System.out.println("进入主页面1controller————————————————");
+        return "user/userIndex";
+    }
+
+    /*访问主页面 - 客户*/
+    @RequestMapping("/index2")
+    public String toIndex2()
+    {
+        System.out.println("进入主页面2controller————————————————");
+        return "toCustomer/goodShow";
     }
 
     /*验证登录*/
@@ -58,12 +66,18 @@ public class LoginController {
         {
             System.out.println("验证成功，进入主页");
             int userId = getUserId(user.getUserName());
+            String name = user.getUserName();
             model.addAttribute("id",userId);
-            return "redirect:/index";
+            model.addAttribute("name",name);
+            if(user.getType() == 0) {
+                return "redirect:/index1";
+            }else {
+                return "redirect:/index2";
+            }
         }else {
             System.out.println("验证失败，进入登录页");
             model.addAttribute("msg","用户名/密码/用户类型错误！");
-            return "loginplus";
+            return "login";
         }
     }
 
@@ -89,7 +103,7 @@ public class LoginController {
         }else {
             System.out.println("注册失败，进入注册页");
             model.addAttribute("msg","用户名已经被使用！");
-            return "registerplus";
+            return "register";
         }
     }
 }

@@ -28,6 +28,13 @@ public class RecordService {
         return recordDao.getAllRecord(userId);
     }
 
+    /*查询记录getRecord*/
+    public List<Record> getRecord(int userId, String goodName)
+    {
+        System.out.println("进入查询记录getRecord service——————————————————");
+        return recordDao.getRecord(userId, goodName);
+    }
+
     /*更新记录*/
     public Boolean updateRecord(int userId, String goodName, String createTime)
     {

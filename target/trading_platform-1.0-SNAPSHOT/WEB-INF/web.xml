@@ -33,6 +33,6 @@
 
   <!--配置默认访问页面-->
   <welcome-file-list>
-    <welcome-file>/WEB-INF/pages/loginplus.jsp</welcome-file>
+    <welcome-file>/WEB-INF/pages/login.jsp</welcome-file>
   </welcome-file-list>
 </web-app>

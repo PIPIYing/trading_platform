@@ -2,7 +2,9 @@ package com.seven.controller;
 
 import com.github.pagehelper.PageInfo;
 import com.seven.domain.Good;
+import com.seven.domain.Record;
 import com.seven.service.GoodService;
+import com.seven.service.RecordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,6 +25,9 @@ public class GoodController {
 
     @Autowired
     GoodService goodService;
+
+    @Autowired
+    RecordService recordService;
 
     /*访问商品管理页*/
     @RequestMapping("/goodIndex")
@@ -59,6 +64,7 @@ public class GoodController {
         Good good = goodService.searchGoodById(id);
         System.out.println(good.getName() + good.getAmount());
         model.addAttribute("good", good);
+
         return "good/goodDetail";
     }
 

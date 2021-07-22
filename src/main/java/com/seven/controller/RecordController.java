@@ -44,16 +44,32 @@ public class RecordController {
         return recordList;
     }
 
+    /*查询记录by userId and goodname*/
+    /*@RequestMapping("/recordSearch")
+    @ResponseBody
+    public Boolean recordSearch(int userId, String goodName)
+    {
+        System.out.println("进入查询记录by userId and goodname controller——————————————————");
+
+        List<Record> recordList = recordService.getRecord(userId, goodName);
+        System.out.println(recordList);
+        if(recordList.size() == 0) {
+            return false;
+        }else {
+            return true;
+        }
+    }*/
+
     /*更新记录*/
     @RequestMapping("/updateRecord")
     @ResponseBody
-    public Map<String,Object> updateRecord(int userId, String goodName)
+    public Map<String,Object> updateRecord(int userId, String goodName, String createTime)
     {
         System.out.println("进入更新记录controller——————————————————");
 
-        Date date=new Date();
+        /*Date date=new Date();
         SimpleDateFormat df=new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        String createTime = df.format(date);
+        String createTime = df.format(date);*/
 
         boolean updateResult = recordService.updateRecord(userId, goodName, createTime);
 
@@ -71,22 +87,25 @@ public class RecordController {
     /*增加记录*/
     @RequestMapping("/addRecord")
     @ResponseBody
-    public Map<String,Object> addRecord(int userId, String goodName)
+    public Map<String,Object> addRecord(int userId, String goodName, String createTime)
     {
         System.out.println("进入增加记录controller——————————————————");
 
-        Date date=new Date();
-        SimpleDateFormat df=new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        String createTime = df.format(date);
-
-        boolean addResult = recordService.addRecord(userId, goodName, createTime);
-
         HashMap<String,Object> map = new HashMap<>();
-        if(addResult==true)
-        {
-            map.put("code",0);
-        }
-        else {
+
+        List<Record> recordList = recordService.getRecord(userId, goodName);
+        System.out.println(recordList);
+        if(recordList.size() != 0) {
+            boolean addResult = recordService.addRecord(userId, goodName, createTime);
+
+            if(addResult==true)
+            {
+                map.put("code",0);
+            }
+            else {
+                map.put("code",-1);
+            }
+        }else {
             map.put("code",-1);
         }
         return map;

@@ -58,7 +58,7 @@
             var datas = data.field;
             var userId = sessionStorage.getItem("userId");
             if (datas.newPwd != datas.newPwdAgain){
-                layer.msg("两次输入的新密码不一致,请重新输入")
+                layer.msg("两次输入的新密码不一致,请重新输入");
             }else{
                 //向后台发送数据提交添加
                 $.ajax({

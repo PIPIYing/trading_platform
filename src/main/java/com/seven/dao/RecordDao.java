@@ -13,4 +13,7 @@ public interface RecordDao {
 
     /*查询个人浏览记录*/
     public List<Record> getAllRecord(int userId);
+
+    /*查询浏览记录是否存在*/
+    public List<Record> getRecord(int userId, String goodName);
 }

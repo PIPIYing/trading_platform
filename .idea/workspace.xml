@@ -7,36 +7,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43653825-e124-4685-82a8-95f53788d2ce" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/loginplus.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/registerplus.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/font/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/style/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layui/style/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/toCustomer/goodShow.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/toCustomer/orderDetail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/controller/GoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/controller/GoodController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/controller/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/controller/RecordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/dao/RecordDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/dao/RecordDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/service/RecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/service/RecordService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/RecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/RecordMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/good/goodAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/good/goodAdd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/good/goodDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/good/goodDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/good/goodIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/good/goodIndex.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/good/goodUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/good/goodUpdate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/loginplus.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/registerplus.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/userIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/userIndex.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/userPwdUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/userPwdUpdate.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/classes/mappers/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/classes/mappers/GoodMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/classes/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/classes/mappers/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/good/goodAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/good/goodAdd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/good/goodDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/good/goodDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/good/goodIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/good/goodIndex.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/good/goodUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/good/goodUpdate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/loginplus.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/registerplus.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/user/userIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/user/userIndex.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/user/userPwdUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/user/userPwdUpdate.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +133,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/toCustomer" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -150,8 +147,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\projects\java\trading_platform\src\main\webapp\WEB-INF\pages" />
       <recent name="E:\projects\java\trading_platform\src\main\webapp\WEB-INF\pages\user" />
+      <recent name="E:\projects\java\trading_platform\src\main\webapp\WEB-INF\pages" />
       <recent name="E:\projects\java\trading_platform\src\main\webapp" />
       <recent name="E:\projects\java\trading_platform\src\main\webapp\trading_platform" />
       <recent name="E:\projects\java\trading_platform\src\main\webapp\lib" />
@@ -163,11 +160,11 @@
       <recent name="com.seven.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects\java\trading_platform\src\main\webapp\WEB-INF\pages\toCustomer" />
+      <recent name="E:\projects\java\trading_platform\src\main\webapp\WEB-INF\pages\good" />
+      <recent name="E:\projects\java\trading_platform\src\main\webapp\WEB-INF\pages" />
       <recent name="E:\projects\java\trading_platform\src\main\webapp\WEB-INF" />
       <recent name="E:\projects\java\trading_platform\src\main\webapp\lib" />
-      <recent name="E:\projects\java\trading_platform\src\main\webapp\WEB-INF\pages" />
-      <recent name="E:\projects\java\trading_platform\src\main\webapp\WEB-INF\pages\good" />
-      <recent name="E:\projects\java\trading_platform\src\main\resources\mappers" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.trading_platform">
@@ -306,7 +303,7 @@
       <workItem from="1626838762643" duration="6687000" />
       <workItem from="1626845729533" duration="20556000" />
       <workItem from="1626917963627" duration="1314000" />
-      <workItem from="1626923972697" duration="22322000" />
+      <workItem from="1626923972697" duration="39209000" />
     </task>
     <servers />
   </component>
@@ -317,6 +314,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="371" y="116" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1626971046375">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="371" y="116" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.720@0.0.1280.720" timestamp="1626971046375" />
     <state x="191" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626918042794">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -329,10 +330,14 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1626948224035" />
-    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626927819566">
+    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626963901298">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1626927819566" />
+    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1626963901298" />
+    <state x="233" y="19" key="#模板数据语言" timestamp="1626969107384">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="19" key="#模板数据语言/0.0.1280.720@0.0.1280.720" timestamp="1626969107384" />
     <state x="428" y="31" key="#项目结构" timestamp="1626750331377">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -357,54 +362,54 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1022" height="74" key="GridCell.Tab.-1.right/0.0.1280.720@0.0.1280.720" timestamp="1626937367639" />
-    <state width="1022" height="125" key="GridCell.Tab.0.bottom" timestamp="1626958440275">
+    <state width="1237" height="94" key="GridCell.Tab.0.bottom" timestamp="1626976719221">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1022" height="125" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1626958440275" />
-    <state width="1022" height="125" key="GridCell.Tab.0.center" timestamp="1626958440275">
+    <state width="1237" height="94" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1626976719221" />
+    <state width="1237" height="94" key="GridCell.Tab.0.center" timestamp="1626976719220">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1022" height="125" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1626958440275" />
-    <state width="1022" height="125" key="GridCell.Tab.0.left" timestamp="1626958440275">
+    <state width="1237" height="94" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1626976719220" />
+    <state width="1237" height="94" key="GridCell.Tab.0.left" timestamp="1626976719220">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1022" height="125" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1626958440275" />
-    <state width="1022" height="125" key="GridCell.Tab.0.right" timestamp="1626958440275">
+    <state width="1237" height="94" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1626976719220" />
+    <state width="1237" height="94" key="GridCell.Tab.0.right" timestamp="1626976719220">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1022" height="125" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1626958440275" />
-    <state width="1022" height="125" key="GridCell.Tab.1.bottom" timestamp="1626958440276">
+    <state width="1237" height="94" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1626976719220" />
+    <state width="1237" height="94" key="GridCell.Tab.1.bottom" timestamp="1626976719225">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1022" height="125" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1626958440276" />
-    <state width="1022" height="125" key="GridCell.Tab.1.center" timestamp="1626958440275">
+    <state width="1237" height="94" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1626976719225" />
+    <state width="1237" height="94" key="GridCell.Tab.1.center" timestamp="1626976719224">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1022" height="125" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1626958440275" />
-    <state width="1022" height="125" key="GridCell.Tab.1.left" timestamp="1626958440275">
+    <state width="1237" height="94" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1626976719224" />
+    <state width="1237" height="94" key="GridCell.Tab.1.left" timestamp="1626976719223">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1022" height="125" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1626958440275" />
-    <state width="1022" height="125" key="GridCell.Tab.1.right" timestamp="1626958440276">
+    <state width="1237" height="94" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1626976719223" />
+    <state width="1237" height="94" key="GridCell.Tab.1.right" timestamp="1626976719224">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1022" height="125" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1626958440276" />
-    <state x="114" y="495" width="1237" height="221" key="GridCell.Tab.2.bottom" timestamp="1626957102366">
+    <state width="1237" height="94" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1626976719224" />
+    <state x="114" y="495" width="1237" height="94" key="GridCell.Tab.2.bottom" timestamp="1626976719225">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="114" y="495" width="1237" height="221" key="GridCell.Tab.2.bottom/0.0.1280.720@0.0.1280.720" timestamp="1626957102366" />
-    <state x="114" y="495" width="1237" height="221" key="GridCell.Tab.2.center" timestamp="1626957102365">
+    <state x="114" y="495" width="1237" height="94" key="GridCell.Tab.2.bottom/0.0.1280.720@0.0.1280.720" timestamp="1626976719225" />
+    <state x="114" y="495" width="1237" height="94" key="GridCell.Tab.2.center" timestamp="1626976719225">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="114" y="495" width="1237" height="221" key="GridCell.Tab.2.center/0.0.1280.720@0.0.1280.720" timestamp="1626957102365" />
-    <state x="114" y="495" width="1237" height="221" key="GridCell.Tab.2.left" timestamp="1626957102365">
+    <state x="114" y="495" width="1237" height="94" key="GridCell.Tab.2.center/0.0.1280.720@0.0.1280.720" timestamp="1626976719225" />
+    <state x="114" y="495" width="1237" height="94" key="GridCell.Tab.2.left" timestamp="1626976719225">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="114" y="495" width="1237" height="221" key="GridCell.Tab.2.left/0.0.1280.720@0.0.1280.720" timestamp="1626957102365" />
-    <state x="114" y="495" width="1237" height="221" key="GridCell.Tab.2.right" timestamp="1626957102366">
+    <state x="114" y="495" width="1237" height="94" key="GridCell.Tab.2.left/0.0.1280.720@0.0.1280.720" timestamp="1626976719225" />
+    <state x="114" y="495" width="1237" height="94" key="GridCell.Tab.2.right" timestamp="1626976719225">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="114" y="495" width="1237" height="221" key="GridCell.Tab.2.right/0.0.1280.720@0.0.1280.720" timestamp="1626957102366" />
+    <state x="114" y="495" width="1237" height="94" key="GridCell.Tab.2.right/0.0.1280.720@0.0.1280.720" timestamp="1626976719225" />
     <state x="114" y="495" width="1022" height="43" key="GridCell.Tab.3.bottom" timestamp="1626951174200">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -449,9 +454,9 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="297" y="161" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1626956014405" />
-    <state x="297" y="14" width="670" height="676" key="search.everywhere.popup" timestamp="1626925417215">
+    <state x="297" y="14" width="670" height="676" key="search.everywhere.popup" timestamp="1626968477382">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="297" y="14" width="670" height="676" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1626925417215" />
+    <state x="297" y="14" width="670" height="676" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1626968477382" />
   </component>
 </project>

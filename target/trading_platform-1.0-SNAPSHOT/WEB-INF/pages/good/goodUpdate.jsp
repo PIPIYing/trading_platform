@@ -21,9 +21,9 @@
 <div class="layui-form layuimini-form">
     <input type="hidden" name="id"  value="${id}">
     <div class="layui-form-item">
-        <label class="layui-form-label required">amount</label>
+        <label class="layui-form-label required">库存</label>
         <div class="layui-input-block">
-            <input type="text" name="amount" lay-verify="required" lay-reqtext="amount不能为空" class="layui-input">
+            <input type="text" name="amount" lay-verify="required" lay-reqtext="库存不能为空" class="layui-input">
         </div>
     </div>
 

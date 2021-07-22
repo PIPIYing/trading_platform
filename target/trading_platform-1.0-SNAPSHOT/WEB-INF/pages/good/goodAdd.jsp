@@ -20,32 +20,32 @@
 <body>
 <div class="layui-form layuimini-form">
     <div class="layui-form-item">
-        <label class="layui-form-label">name</label>
+        <label class="layui-form-label required">商品名</label>
         <div class="layui-input-block">
-            <input type="text" name="name" lay-reqtext="用户名不能为空" autocomplete="off" placeholder="请输入用户名" class="layui-input">
+            <input type="text" name="name" autocomplete="off" class="layui-input" lay-verify="required" lay-reqtext="商品名不能为空">
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">amount</label>
+        <label class="layui-form-label required">库存</label>
         <div class="layui-input-block">
-            <input type="text" name="amount" lay-reqtext="密码不能为空" placeholder="请输入密码" class="layui-input">
+            <input type="text" name="amount" class="layui-input" lay-verify="required" lay-reqtext="库存不能为空">
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">price</label>
+        <label class="layui-form-label required">单价</label>
         <div class="layui-input-block">
-            <input type="text" name="price" lay-reqtext="密码不能为空" placeholder="请输入密码" class="layui-input">
+            <input type="text" name="price" class="layui-input" lay-verify="required" lay-reqtext="单价不能为空">
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">description</label>
+        <label class="layui-form-label required">商品描述</label>
         <div class="layui-input-block">
-            <input type="text" name="description" lay-reqtext="密码不能为空" placeholder="请输入密码" class="layui-input">
+            <input type="text" name="description" class="layui-input" lay-verify="required" lay-reqtext="商品描述不能为空">
         </div>
     </div>
     <div class="layui-form-item">
-        <div class="layui-input-block">
-            <button class="layui-btn layui-btn-normal" lay-submit lay-filter="saveBtn">确认保存</button>
+        <div class="layui-input-block required">
+            <button class="layui-btn layui-btn-normal" lay-submit lay-filter="saveBtn">确认添加</button>
         </div>
     </div>
 </div>
