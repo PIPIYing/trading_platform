@@ -26,7 +26,6 @@ public class UserService {
     {
         System.out.println("进入登录验证service——————————————————");
         System.out.println(username + "+" + password + "+" + type);
-
         User user = userDao.checkUser(username,password,type);
 
         /*如果查询到的用户不为null*/
@@ -64,18 +63,26 @@ public class UserService {
     public Boolean addUser(User user)
     {
         System.out.println("进入添加管理员service—————————————————");
-        int addResult = userDao.addUser(user.getUserName(),user.getPassword(),user.getType());
+        System.out.println(user.getUserName() + "+" + user.getPassword() + "+" + user.getType());
+        if(userDao.searchUserByName(user.getUserName()).size()==0)
+        {
+            int addResult = userDao.addUser(user.getUserName(),user.getPassword(),user.getType());
 
-        /*根据返回的整数判断是否添加成功*/
-        if(addResult>0)
-        {
-            /*返回true表示添加成功*/
-            return true;
-        }
-        else
-        {
+            /*根据返回的整数判断是否添加成功*/
+            if(addResult>0)
+            {
+                /*返回true表示添加成功*/
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        } else {
+            //用户名已重复
             return false;
         }
+
     }
 
     /*修改管理员密码*/

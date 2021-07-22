@@ -27,6 +27,13 @@
         </if>
     </select>
 
+    <select id="searchUserByName" resultType="com.seven.domain.User" parameterType="String">
+        select * from user where userName = #{userName}
+        <if test="userName!=null">
+            and userName = #{userName}
+        </if>
+    </select>
+
     <insert id="addUser">
         insert into user(userName,password,type) values(#{param1},#{param2},#{param3})
     </insert>

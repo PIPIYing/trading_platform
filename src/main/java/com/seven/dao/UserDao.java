@@ -15,6 +15,9 @@ public interface UserDao {
     /*根据用户名和类型查询用户*/
     public List<User> searchUser(@Param("userName") String userName, @Param("type") int type);
 
+    /*根据用户名查询用户是否存在*/
+    public List<User> searchUserByName(@Param("userName") String userName);
+
     /*添加管理员*/
     public int addUser(String userName,String password,int type);
 

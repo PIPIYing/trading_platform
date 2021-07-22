@@ -23,7 +23,7 @@
     </select>
 
     <insert id="addGood">
-        insert into good(name,amount,price,description,image) values(#{param1},#{param2},#{param3},#{param4},#{param5})
+        insert into good(name,amount,price,description) values(#{param1},#{param2},#{param3},#{param4})
     </insert>
 
     <update id="updateGoodAmount" parameterType="object" >

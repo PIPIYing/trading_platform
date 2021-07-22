@@ -26,7 +26,7 @@ public class LoginController {
     public String toLogin()
     {
         System.out.println("进入登录页面controller————————————————");
-        return "loginTest";
+        return "loginplus";
     }
 
     /*访问注册页面*/
@@ -34,7 +34,7 @@ public class LoginController {
     public String toRegister()
     {
         System.out.println("进入注册页面controller————————————————");
-        return "registerTest";
+        return "registerplus";
     }
 
     /*访问主页面*/
@@ -52,6 +52,7 @@ public class LoginController {
         System.out.println("进入登录验证controller————————————————");
         System.out.println(user);
         System.out.println(user.getUserName() + "+" + user.getPassword() + "+" + user.getType());
+
         /*调用验证登录的逻辑类去验证登录*/
         if(userService.checkLogin(user.getUserName(),user.getPassword(),user.getType(),request)==true)
         {
@@ -61,8 +62,8 @@ public class LoginController {
             return "redirect:/index";
         }else {
             System.out.println("验证失败，进入登录页");
-            model.addAttribute("msg","用户名或者密码或者用户类型错误！");
-            return "loginTest";
+            model.addAttribute("msg","用户名/密码/用户类型错误！");
+            return "loginplus";
         }
     }
 
@@ -84,11 +85,11 @@ public class LoginController {
         if(addResult==true)
         {
             System.out.println("注册成功，进入登录页");
-            return "loginTest";
+            return "redirect:/toLogin";
         }else {
             System.out.println("注册失败，进入注册页");
-            model.addAttribute("msg","注册失败，请重试");
-            return "registerTest";
+            model.addAttribute("msg","用户名已经被使用！");
+            return "registerplus";
         }
     }
 }
