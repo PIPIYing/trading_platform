@@ -6,11 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @ClassName LoginController
@@ -29,7 +26,7 @@ public class LoginController {
     public String toLogin()
     {
         System.out.println("进入登录页面controller————————————————");
-        return "login";
+        return "loginTest";
     }
 
     /*访问注册页面*/
@@ -37,7 +34,7 @@ public class LoginController {
     public String toRegister()
     {
         System.out.println("进入注册页面controller————————————————");
-        return "register";
+        return "registerTest";
     }
 
     /*访问主页面*/
@@ -65,7 +62,7 @@ public class LoginController {
         }else {
             System.out.println("验证失败，进入登录页");
             model.addAttribute("msg","用户名或者密码或者用户类型错误！");
-            return "login";
+            return "loginTest";
         }
     }
 
@@ -87,11 +84,11 @@ public class LoginController {
         if(addResult==true)
         {
             System.out.println("注册成功，进入登录页");
-            return "login";
+            return "loginTest";
         }else {
             System.out.println("注册失败，进入注册页");
             model.addAttribute("msg","注册失败，请重试");
-            return "register";
+            return "registerTest";
         }
     }
 }

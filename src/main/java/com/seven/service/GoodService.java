@@ -3,8 +3,6 @@ package com.seven.service;
 import com.github.pagehelper.PageHelper;
 import com.seven.dao.GoodDao;
 import com.seven.domain.Good;
-import com.seven.domain.User;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -49,7 +47,7 @@ public class GoodService {
     public Boolean addGood(Good good)
     {
         System.out.println("进入添加商品service—————————————————");
-        int addResult = goodDao.addGood(good.getName(), good.getAmount(), good.getPrice(), good.getDescription(), good.getImage());
+        int addResult = goodDao.addGood(good.getName(), good.getAmount(), good.getPrice(), good.getDescription());
 
         /*根据返回的整数判断是否添加成功*/
         if(addResult>0)

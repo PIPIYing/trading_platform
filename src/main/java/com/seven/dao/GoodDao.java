@@ -16,7 +16,7 @@ public interface GoodDao {
     public Good searchGoodById(@Param("id") int id);
 
     /*添加商品*/
-    public int addGood(String name, int amount, int price, String description, String image);
+    public int addGood(String name, int amount, int price, String description);
 
     /*修改商品数据*/
     /*public int updateGood(int amount, int price, String description);*/

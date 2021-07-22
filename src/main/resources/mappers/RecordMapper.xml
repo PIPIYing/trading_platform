@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.seven.dao.RecordDao" >
+    <select id="getAllRecord" resultType="com.seven.domain.Record" parameterType="int">
+        select * from record where id=#{param1}
+    </select>
+
+    <insert id="addRecord">
+        insert into record(userId, goodName, createTime) values(#{param1},#{param2},#{param3})
+    </insert>
+
+    <update id="updateRecord" parameterType="object" >
+        update record set createTime=#{param3} where userId=#{param1} and goodName=#{param2}
+    </update>
+</mapper>

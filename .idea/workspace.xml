@@ -7,19 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43653825-e124-4685-82a8-95f53788d2ce" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/controller/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/upload.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/controller/RecordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/dao/RecordDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/domain/Record.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/service/RecordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/RecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seven/TestRecord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/controller/GoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/controller/GoodController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/good/goodAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/good/goodAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/good/goodDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/good/goodDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/good/goodIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/good/goodIndex.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springmvc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springmvc-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/good/goodAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/good/goodAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/good/goodIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/good/goodIndex.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/trading_platform-1.0-SNAPSHOT/WEB-INF/pages/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/dao/GoodDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/dao/GoodDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/service/GoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/service/GoodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/GoodMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/GoodMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
         <item name="trading_platform" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="trading_platform: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="record: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -69,12 +67,13 @@
         <option value="spring-beans.schema" />
         <option value="Tag Library Descriptor" />
         <option value="FxmlFile" />
-        <option value="mybatis" />
-        <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="mybatis" />
         <option value="Class" />
       </list>
     </option>
+    <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -151,7 +150,23 @@
       <recent name="E:\projects\java\trading_platform\src\main\webapp\images" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestRecord.getRecord">
+    <configuration name="TestRecord.getRecord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trading_platform" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seven" />
+      <option name="MAIN_CLASS_NAME" value="com.seven.TestRecord" />
+      <option name="METHOD_NAME" value="getRecord" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="trading_platform" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.56" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="START_JAVASCRIPT_DEBUGGER" value="true" />
@@ -226,6 +241,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestRecord.getRecord" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -241,7 +261,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="运行" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="完成" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -266,7 +286,7 @@
       <workItem from="1626838762643" duration="6687000" />
       <workItem from="1626845729533" duration="20556000" />
       <workItem from="1626917963627" duration="1314000" />
-      <workItem from="1626923972697" duration="11655000" />
+      <workItem from="1626923972697" duration="16139000" />
     </task>
     <servers />
   </component>
@@ -281,10 +301,14 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="191" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1626918042794" />
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1626792459862">
+    <state x="272" y="48" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1626948054448">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1626792459862" />
+    <state x="272" y="48" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1280.720@0.0.1280.720" timestamp="1626948054448" />
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser" timestamp="1626948224035">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1626948224035" />
     <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626927819566">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -313,22 +337,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1022" height="74" key="GridCell.Tab.-1.right/0.0.1280.720@0.0.1280.720" timestamp="1626937367639" />
-    <state width="1022" height="74" key="GridCell.Tab.0.bottom" timestamp="1626937369249">
+    <state width="1237" height="225" key="GridCell.Tab.0.bottom" timestamp="1626950966054">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1022" height="74" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1626937369249" />
-    <state width="1022" height="74" key="GridCell.Tab.0.center" timestamp="1626937369248">
+    <state width="1237" height="225" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1626950966054" />
+    <state width="1237" height="225" key="GridCell.Tab.0.center" timestamp="1626950966053">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1022" height="74" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1626937369248" />
-    <state width="1022" height="74" key="GridCell.Tab.0.left" timestamp="1626937369248">
+    <state width="1237" height="225" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1626950966053" />
+    <state width="1237" height="225" key="GridCell.Tab.0.left" timestamp="1626950966053">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1022" height="74" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1626937369248" />
-    <state width="1022" height="74" key="GridCell.Tab.0.right" timestamp="1626937369249">
+    <state width="1237" height="225" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1626950966053" />
+    <state width="1237" height="225" key="GridCell.Tab.0.right" timestamp="1626950966054">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1022" height="74" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1626937369249" />
+    <state width="1237" height="225" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1626950966054" />
     <state width="1022" height="223" key="GridCell.Tab.1.bottom" timestamp="1626937371835">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -393,6 +417,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="114" y="495" width="1036" height="108" key="dock-window-1/0.0.1280.720@0.0.1280.720" timestamp="1626937384899" />
+    <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1626950274486">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="383" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.720@0.0.1280.720" timestamp="1626950274486" />
     <state x="297" y="14" width="670" height="676" key="search.everywhere.popup" timestamp="1626925417215">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
