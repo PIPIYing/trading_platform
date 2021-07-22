@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seven.dao.GoodDao">
+
+    <select id="getAllGood" resultType="com.seven.domain.Good" parameterType="int">
+        select * from good
+    </select>
+
+    <select id="searchGood" resultType="com.seven.domain.Good" parameterType="String">
+        select * from good where 1=1
+        <if test="name!=null">
+            and name = #{name}
+        </if>
+    </select>
+
+    <select id="searchGoodById" resultType="com.seven.domain.Good" parameterType="int">
+        select * from good where 1=1
+        <if test="id!=0">
+            and id = #{id}
+        </if>
+    </select>
+
+    <insert id="addGood">
+        insert into good(name,amount,price,description,image) values(#{param1},#{param2},#{param3},#{param4},#{param5})
+    </insert>
+
+    <update id="updateGoodAmount" parameterType="object" >
+        update good set amount=#{param2} where id=#{param1}
+    </update>
+
+    <delete id="deleteGood" parameterType="list">
+        delete from good where id in
+        <foreach collection="list" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

@@ -28,6 +28,7 @@
 </head>
 <body class="layui-layout-body layuimini-all">
     <a href="/userIndex" class="layui-btn">用户管理</a>
+    <a href="/goodIndex" class="layui-btn">商品管理</a>
     <%--<div class="layui-layout layui-layout-admin">
         <div class="layui-header header">
             <div class="layui-logo layuimini-logo"></div>
