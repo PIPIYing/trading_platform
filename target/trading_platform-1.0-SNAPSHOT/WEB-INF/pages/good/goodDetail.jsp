@@ -6,28 +6,23 @@
 </head>
 <body>
 <table border="1px solid black">
-    <%--<tr>
+    <tr>
         <td>id</td>
         <td>name</td>
         <td>amount</td>
         <td>price</td>
         <td>description</td>
-        <td>image</td>
     </tr>
 
     <c:if test="${good ne null}">
-        <c:forEach items="${good}" var="good">
-            <tr>
-                <td>${good.id}</td>
-                <td>${good.name}</td>
-                <td>${good.amount}</td>
-                <td>${good.price}</td>
-                <td>${good.description}</td>
-                <td>${good.image}</td>
-            </tr>
-        </c:forEach>
-    </c:if>--%>
-
+        <tr>
+            <td>${good.id}</td>
+            <td>${good.name}</td>
+            <td>${good.amount}</td>
+            <td>${good.price}</td>
+            <td>${good.description}</td>
+        </tr>
+    </c:if>
 
 </table>
 </body>

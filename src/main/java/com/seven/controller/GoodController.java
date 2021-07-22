@@ -48,9 +48,17 @@ public class GoodController {
 
     /*访问商品详情页*/
     @RequestMapping("/goodDetail")
-    public String goodDetail(String id, Model model)
+    public String goodDetail(int id, Model model)
     {
-        model.addAttribute("id",id);
+        System.out.println("进入搜索商品IDcontroller——————————————————");
+        if(id==0)
+        {
+            id=0;
+        }
+
+        Good good = goodService.searchGoodById(id);
+        System.out.println(good.getName() + good.getAmount());
+        model.addAttribute("good", good);
         return "good/goodDetail";
     }
 
@@ -92,21 +100,6 @@ public class GoodController {
         map.put("msg","");
         return map;
     }
-
-    /*搜索商品（根据id）*/
-    @RequestMapping("/goodSearchById")
-    @ResponseBody
-    public Good goodSearchById(int id)
-    {
-        System.out.println("进入搜索商品IDcontroller——————————————————");
-        if(id==0)
-        {
-            id=0;
-        }
-
-        return goodService.searchGoodById(id);
-    }
-
 
     /*添加商品操作*/
     @RequestMapping("/goodAddSumbit")

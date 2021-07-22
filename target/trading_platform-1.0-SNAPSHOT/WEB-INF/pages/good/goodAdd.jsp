@@ -20,27 +20,27 @@
 <body>
 <div class="layui-form layuimini-form">
     <div class="layui-form-item">
-        <label class="layui-form-label required">name</label>
+        <label class="layui-form-label">name</label>
         <div class="layui-input-block">
-            <input type="text" name="name" lay-verify="required" lay-reqtext="用户名不能为空" autocomplete="off" placeholder="请输入用户名" class="layui-input">
+            <input type="text" name="name" lay-reqtext="用户名不能为空" autocomplete="off" placeholder="请输入用户名" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label required">amount</label>
+        <label class="layui-form-label">amount</label>
         <div class="layui-input-block">
-            <input type="text" name="amount" lay-verify="required" lay-reqtext="密码不能为空" placeholder="请输入密码" class="layui-input">
+            <input type="text" name="amount" lay-reqtext="密码不能为空" placeholder="请输入密码" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label required">price</label>
+        <label class="layui-form-label">price</label>
         <div class="layui-input-block">
-            <input type="text" name="price" lay-verify="required" lay-reqtext="密码不能为空" placeholder="请输入密码" class="layui-input">
+            <input type="text" name="price" lay-reqtext="密码不能为空" placeholder="请输入密码" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label required">description</label>
+        <label class="layui-form-label">description</label>
         <div class="layui-input-block">
-            <input type="text" name="description" lay-verify="required" lay-reqtext="密码不能为空" placeholder="请输入密码" class="layui-input">
+            <input type="text" name="description" lay-reqtext="密码不能为空" placeholder="请输入密码" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
@@ -56,7 +56,7 @@
             layer = layui.layer,
             $ = layui.$;
 
-        //监听提交
+        //监听增加提交
         form.on('submit(saveBtn)', function (data) {
             var datas = data.field;//form单中的数据信息
             console.log(datas);
@@ -83,6 +83,32 @@
             return false;
         });
 
+        //监听上传提交
+        /*form.on('submit(uploadBtn)', function (data) {
+            var datas = data.field; //form单中的数据信息
+            console.log(datas);
+            //向后台发送数据提交添加
+            $.ajax({
+                url: "upload",
+                type: "POST",
+                contentType: "multipart/form-data",
+                data: datas,
+                success:function(result){
+                    console.log(result);
+                    /!*if(result.code==0){//如果成功
+                        layer.msg('添加成功',{
+                            icon:6,
+                            time:500
+                        },function(){
+
+                        })
+                    }else{
+                        layer.msg("添加失败");
+                    }*!/
+                }
+            })
+            return false;
+        });*/
     });
 </script>
 </body>

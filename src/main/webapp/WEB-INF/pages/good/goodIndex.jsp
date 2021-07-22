@@ -157,7 +157,7 @@
                     layer.close(index);
                 });
             } else if (obj.event === 'detail') {  // 监听详情操作
-                /*var index = layer.open({
+                var index = layer.open({
                     title: '详情信息',
                     type: 2,
                     shade: 0.2,
@@ -168,7 +168,7 @@
                 });
                 $(window).on("resize", function () {
                     layer.full(index);
-                });*/
+                });
                 console.log("点击详情按钮")
             }
         });
