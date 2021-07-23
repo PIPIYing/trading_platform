@@ -50,18 +50,12 @@
                 <li class="layui-nav-item">
                     <a href="/goodIndex">商品管理</a>
                 </li>
-                <%--<li class="layui-nav-item">
-                    <a href="">公告展示</a>
+                <li class="layui-nav-item">
+                    <a href="/orderIndex">订单管理</a>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="">商品展示</a>
+                    <a href="/noticeIndex">公告管理</a>
                 </li>
-                <li class="layui-nav-item">
-                    <a href="">购物车</a>
-                </li>
-                <li class="layui-nav-item">
-                    <a href="">支付订单</a>
-                </li>--%>
             </ul>
         </div>
     </div>
@@ -262,14 +256,29 @@
             layer = layui.layer;
 
         $(document).on('click', '#correct', function() {
-            layer.open({
-                title: '修改管理员信息',
+            var index = layer.open({
+                title: '修改密码信息',
                 type: 2,
                 shade: 0.2,
                 maxmin:true,
                 shadeClose: true,
                 area: ['60%', '60%'],
                 content: '/userPwdUpdate'
+            });
+            $(window).on("resize", function () {
+                layer.full(index);
+            });
+        });
+
+        $(document).on('click', '#buyRecord', function() {
+            var index = layer.open({
+                title: '查看购买记录',
+                type: 2,
+                shade: 0.2,
+                maxmin:true,
+                shadeClose: true,
+                area: ['60%', '60%'],
+                content: '/buyRecord'
             });
             $(window).on("resize", function () {
                 layer.full(index);

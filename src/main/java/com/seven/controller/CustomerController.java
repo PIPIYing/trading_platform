@@ -1,19 +1,28 @@
 package com.seven.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.seven.domain.Good;
+import com.seven.domain.Order;
 import com.seven.domain.Record;
 import com.seven.service.GoodService;
+import com.seven.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class CustomerController {
     @Autowired
     GoodService goodService;
+
+    @Autowired
+    OrderService orderService;
 
     /*客户访问商品页*/
     @RequestMapping("/goodShow")
@@ -21,6 +30,39 @@ public class CustomerController {
     {
         return "toCustomer/goodShow";
     }
+
+    /*客户访问页*/
+    @RequestMapping("/noticeShow")
+    public String noticeShow()
+    {
+        return "toCustomer/noticeIndex";
+    }
+
+    /*客户访问购买记录页*/
+    @RequestMapping("/buyRecord")
+    public String buyRecord()
+    {
+        return "toCustomer/buyRecord";
+    }
+
+    /*客户访问页*/
+    @RequestMapping("/buyRecordGet")
+    @ResponseBody
+    public Map<String,Object> buyRecordGet(int userId,int page,int limit)
+    {
+        Map<String,Object> map = new HashMap<>();
+        System.out.println("进入查询订单controller——————————————————");
+
+        List<Order> orderList = orderService.getOrder(userId, page, limit);
+        System.out.println(orderList);
+        PageInfo<Order> pageInfo = new PageInfo<>(orderList);
+        map.put("data",pageInfo.getList());
+        map.put("count",pageInfo.getTotal());
+        map.put("code",0);
+        map.put("msg","");
+        return map;
+    }
+
 
     /*客户访问填写订单页*/
     @RequestMapping("/orderDetail")
@@ -39,31 +81,4 @@ public class CustomerController {
         return "toCustomer/orderDetail";
     }
 
-    /*生成订单的库存处理*/
-    @RequestMapping("/buy")
-    public void buy(Good good)
-    {
-        System.out.println("进入生成订单controller——————————————————");
-        System.out.println(good.getAmount());
-
-        /*逻辑： 根据goodid获取good的amount
-        Good good = goodService.searchGoodById(id);
-        int amount = good.getAmount();
-        int id = good.getId();
-        ，减去现在的amount
-        int newAmount = amount - amount(现)
-        传递给 goodid amount(现)
-        * boolean updateResult = goodService.updateGoodAmount(id, newAmount);
-        * 实现修改库存
-        HashMap<String,Object> map = new HashMap<>();
-        if(updateResult==true)
-        {
-            再新增订单
-        }
-        else {
-            map.put("code",-1);
-            return map;
-        }
-        * */
-    }
 }

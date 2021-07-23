@@ -11,7 +11,7 @@
  Target Server Version : 80022
  File Encoding         : 65001
 
- Date: 21/07/2021 20:26:48
+ Date: 23/07/2021 09:56:12
 */
 
 SET NAMES utf8mb4;
@@ -29,11 +29,7 @@ CREATE TABLE `good`  (
   `description` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '商品描述',
   `image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '商品展示图',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of good
--- ----------------------------
+) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for notice
@@ -43,17 +39,13 @@ CREATE TABLE `notice`  (
   `id` int(0) NOT NULL AUTO_INCREMENT COMMENT 'id',
   `user_id` int(0) NOT NULL COMMENT '发布人id',
   `authorName` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '发布人',
-  `title` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '公告标题',
+  `title` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '公告标题',
   `content` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '公告内容',
-  `createTime` datetime(0) NULL DEFAULT NULL COMMENT '发布时间',
+  `newestTime` datetime(0) NULL DEFAULT NULL COMMENT '最新发布时间',
   PRIMARY KEY (`id`, `user_id`) USING BTREE,
   INDEX `foreig_userId`(`user_id`) USING BTREE,
   CONSTRAINT `foreig_userId` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of notice
--- ----------------------------
 
 -- ----------------------------
 -- Table structure for order
@@ -79,8 +71,18 @@ CREATE TABLE `order`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
--- Records of order
+-- Table structure for record
 -- ----------------------------
+DROP TABLE IF EXISTS `record`;
+CREATE TABLE `record`  (
+  `id` int(0) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `userId` int(0) NOT NULL COMMENT '用户id',
+  `goodName` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '商品名',
+  `createTime` datetime(0) NULL DEFAULT NULL COMMENT '浏览时间',
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `userId`(`userId`) USING BTREE,
+  CONSTRAINT `userId` FOREIGN KEY (`userId`) REFERENCES `user` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for user
@@ -92,17 +94,6 @@ CREATE TABLE `user`  (
   `password` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '密码',
   `type` int(0) NULL DEFAULT 1 COMMENT '用户类型，0是管理员，1是客户',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of user
--- ----------------------------
-INSERT INTO `user` VALUES (1, 'admin123', '123', 0);
-INSERT INTO `user` VALUES (2, 'user123', '123', 1);
-INSERT INTO `user` VALUES (3, '123', '123', 0);
-INSERT INTO `user` VALUES (4, '321', '123', 0);
-INSERT INTO `user` VALUES (8, '555', '555', 1);
-INSERT INTO `user` VALUES (9, '666', '666', 1);
-INSERT INTO `user` VALUES (12, '555', '666', 1);
+) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 SET FOREIGN_KEY_CHECKS = 1;

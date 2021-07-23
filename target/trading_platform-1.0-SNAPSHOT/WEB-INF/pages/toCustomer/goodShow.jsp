@@ -1,4 +1,5 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
@@ -22,6 +23,9 @@
                     <dd>
                         <a id="correct">修改密码</a>
                     </dd>
+                    <dd>
+                        <a id="buyRecord">购买记录</a>
+                    </dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
@@ -36,6 +40,9 @@
             <ul class="layui-nav layui-nav-tree" lay-filter="test">
                 <li class="layui-nav-item">
                     <a href="/goodShow">商品展示</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/noticeShow">公告展示</a>
                 </li>
             </ul>
         </div>
@@ -152,11 +159,70 @@
         });
     })
 
+    layui.use('layer', function(){
+        var $ = layui.jquery,
+            layer = layui.layer;
+
+        $(document).on('click', '#correct', function() {
+            var index = layer.open({
+                title: '修改密码信息',
+                type: 2,
+                shade: 0.2,
+                maxmin:true,
+                shadeClose: true,
+                area: ['60%', '60%'],
+                content: '/userPwdUpdate'
+            });
+            $(window).on("resize", function () {
+                layer.full(index);
+            });
+        });
+
+        $(document).on('click', '#buyRecord', function() {
+            var index = layer.open({
+                title: '查看购买记录',
+                type: 2,
+                shade: 0.2,
+                maxmin:true,
+                shadeClose: true,
+                area: ['60%', '60%'],
+                content: '/buyRecord'
+            });
+            $(window).on("resize", function () {
+                layer.full(index);
+            });
+        });
+    })
 
     window.onload = function() {
+        console.log("进入主页");
+        console.log(sessionStorage.getItem("userId"))
+        console.log(sessionStorage.getItem("userName"))
+
+        /*sessionStorage.setItem("userId",GetQueryString('id'));
+        sessionStorage.setItem("userName",GetQueryString('name'));
+        var username = sessionStorage.getItem("userName");
+        var usernameDom = document.getElementById("nameTag");
+        usernameDom.innerText = username;*/
+
+        if(!sessionStorage.getItem("userId")) {
+            sessionStorage.setItem("userId",GetQueryString('id'));
+        }
+        if(!sessionStorage.getItem("userName")) {
+            sessionStorage.setItem("userName",GetQueryString('name'));
+            console.log(sessionStorage.setItem("userName",GetQueryString('name')));
+        }
         var username = sessionStorage.getItem("userName");
         var usernameDom = document.getElementById("nameTag");
         usernameDom.innerText = username;
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return unescape(r[2]);
+            }
+            return null;
+        }
     }
 </script>
 </body>

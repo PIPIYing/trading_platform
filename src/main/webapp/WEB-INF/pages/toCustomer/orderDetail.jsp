@@ -101,16 +101,19 @@
             console.log("点击提交按钮");
             var datas = data.field;
             var userId = sessionStorage.getItem("userId");
-            var totalPrice = parseInt(datas.amount) * parseInt(datas.price);
+            var id = ${good.id};
+            var name = new String("${good.name}");
+            var totalPrice = parseInt(datas.amount) * parseInt(${good.price});
             var createTime = new Date().Format("yyyy-MM-dd HH:mm:ss");
+            console.log(id);
             $.ajax({
-                url:"/buy",  /*提交url*/
+                url:"/addOrder",  /*提交url*/
                 type:"POST",
                 data: {
                     userId: userId,
-                    goodId: datas.id,
+                    goodId: id,
                     userName: datas.userName,
-                    goodName: datas.goodName,
+                    goodName: name,
                     amount: datas.amount,
                     totalPrice: totalPrice,
                     phone: datas.phone,

@@ -5,6 +5,10 @@
         select * from record where id=#{param1}
     </select>
 
+    <select id="getRecord" resultType="com.seven.domain.Record">
+        select * from record where id=#{param1} and goodName=#{param2}
+    </select>
+
     <insert id="addRecord">
         insert into record(userId, goodName, createTime) values(#{param1},#{param2},#{param3})
     </insert>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seven.dao.NoticeDao">
+
+    <select id="getAllNotice" resultType="com.seven.domain.Notice" parameterType="int">
+        select * from notice
+    </select>
+
+    <insert id="addNotice">
+        insert into notice(user_id,authorName,title,content,newestTime) values(#{param1},#{param2},#{param3},#{param4},#{param5})
+    </insert>
+
+    <delete id="deleteNotice" parameterType="list">
+        delete from notice where id in
+        <foreach collection="list" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="searchNotice" parameterType="int" resultType="com.seven.domain.Notice">
+        select * from notice where 1=1
+        <if test="id!=null">
+            and id = #{param1}
+        </if>
+    </select>
+
+    <update id="updateNotice" parameterType="Object">
+        update notice set title=#{param2},content=#{param3},newestTime=#{param4} where id=#{param1};
+    </update>
+
+</mapper>
