@@ -32,9 +32,6 @@
                     <dd>
                         <a id="correct">修改密码</a>
                     </dd>
-                        <dd>
-                            <a id="buyRecord">购买记录</a>
-                        </dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
@@ -118,7 +115,7 @@
             tool: '#userTableBar',
             cols: [[
                 {type: "checkbox", width: 50},
-                {field: 'id', width: 100, title: 'ID', sort: true},
+                /*{field: 'id', width: 100, title: 'ID', sort: true},*/
                 {field: 'userName', width: 150, title: '用户名'},
                 {
                     field: 'type', width: 200, title: '类型', templet: function (res) {

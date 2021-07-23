@@ -100,7 +100,7 @@
             page: true,//开启分页
             cols: [[ //表头
                 {type: "checkbox", width: 50},
-                /*{field: 'id', title: '公告编号', width:150, sort: true}*/
+                {field: 'id', title: '公告编号', width:150, sort: true}
                 /*,{field: 'user_id', title: '用户id', width:150, sort: true}*/
                 ,{field: 'authorName', title: '发布者', width:150}
                 ,{field: 'title', title: '标题', width:150}

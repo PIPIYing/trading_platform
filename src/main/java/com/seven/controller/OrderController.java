@@ -54,6 +54,7 @@ public class OrderController {
     System.out.println("添加订单: " + order);
     System.out.println("添加订单的goodid: " + order.getGoodId());
     System.out.println("添加订单的goodid: " + order.getGoodName());
+    /*修改库存*/
     Good good = goodService.searchGoodById(order.getGoodId());
     int amount = good.getAmount();
     int id = good.getId();
@@ -62,6 +63,7 @@ public class OrderController {
     HashMap<String,Object> map = new HashMap<>();
     if(updateResult==true)
     {
+      /*新增订单*/
       boolean addResult = orderService.addOrder(order);
       if(addResult==true)
       {

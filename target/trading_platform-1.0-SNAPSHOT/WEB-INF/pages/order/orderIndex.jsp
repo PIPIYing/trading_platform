@@ -27,9 +27,6 @@
                     <dd>
                         <a id="correct">修改密码</a>
                     </dd>
-                        <dd>
-                            <a id="buyRecord">购买记录</a>
-                        </dd>
                 </dl>
             </li>
             <li class="layui-nav-item">

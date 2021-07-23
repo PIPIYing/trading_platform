@@ -31,18 +31,20 @@
     <mvc:resources mapping="/trading_platform/api/**" location="/api/"/>
 
     <!--配置拦截器-->
-    <!--<mvc:interceptors>
+    <mvc:interceptors>
         <mvc:interceptor>
-            &lt;!&ndash;表示拦截器要拦截的路径:/**表示拦截所有路径&ndash;&gt;
-            &lt;!&ndash; 注意  /** (任意分层路径下) ，/* (该任意单路径下) 和 配置順序（先所有后排除） &ndash;&gt;
+            <!--表示拦截器要拦截的路径:/**表示拦截所有路径-->
+            <!-- 注意  /** (任意分层路径下) ，/* (该任意单路径下) 和 配置順序（先所有后排除） -->
             <mvc:mapping path="/**"/>
-            &lt;!&ndash;不拦截的路径&ndash;&gt;
+            <!--不拦截的路径-->
             <mvc:exclude-mapping path="/"/>
             <mvc:exclude-mapping path="/toLogin"/>
             <mvc:exclude-mapping path="/login"/>
+            <mvc:exclude-mapping path="/toRegister"/>
+            <mvc:exclude-mapping path="/register"/>
             <bean class="com.seven.interceptor.LoginInterceptor"/>
         </mvc:interceptor>
-    </mvc:interceptors>-->
+    </mvc:interceptors>
 
     <!--文件上传-->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">

@@ -32,9 +32,6 @@
                     <dd>
                         <a id="correct">修改密码</a>
                     </dd>
-                        <dd>
-                            <a id="buyRecord">购买记录</a>
-                        </dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
@@ -111,7 +108,7 @@
             defaultToolbar: [],
             cols: [[
                 {type: "checkbox", width: 50},
-                {field: 'id', width: 100, title: 'ID', sort: true},
+                /*{field: 'id', width: 100, title: 'ID', sort: true},*/
                 {field: 'name', width: 150, title: '商品名'},
                 {field: 'amount', width: 80, title: 'amount'},
                 {field: 'price', width: 80, title: 'price'},
